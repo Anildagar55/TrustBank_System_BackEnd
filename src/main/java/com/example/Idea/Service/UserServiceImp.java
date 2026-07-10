@@ -16,7 +16,6 @@ public class UserServiceImp implements UserService{
     BankRepository bankRepository;
     @Override
     public User create(User user) {
-
        return userRepository.save(user);
 //        return "Successfully add user";
     }
