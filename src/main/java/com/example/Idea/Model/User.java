@@ -32,7 +32,7 @@ public class User {
     private String email;
 
  @JsonManagedReference
-    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "users",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<Bank> bankList=new ArrayList<>();
 
 }
